@@ -4,6 +4,8 @@ Icons data for [postcss-icon plugin](https://github.com/retyui/postcss-icon)
 
 Based on [joshnh/Pure-CSS-Icons](https://github.com/joshnh/Pure-CSS-Icons)
 
+![joshnh/Pure-CSS-Icons](https://raw.githubusercontent.com/retyui/postcss-icon.joshnh/master/retyui.github.io_postcss-icon_joshnh.png)
+
 ## Install
 ```bash
 npm install -D postcss-icon.joshnh
