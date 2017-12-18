@@ -20,10 +20,10 @@ const dataJoshnh  = require('postcss-icon.joshnh');
 const CSS = `
 .custom-selector{
 	@icon: joshnh-pause; /* 'joshnh-' is Prefix , 'pause' is name Icon*/ }
-
 .custom-selector2{ /* or */
 	@icon joshnh-pause; }
 `;
+
 postcss(
 	postcssIcon({
 		prefix: 'joshnh-', /* required when using multiple Icon.data sets */
