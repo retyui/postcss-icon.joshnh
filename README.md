@@ -16,16 +16,20 @@ yarn add -D postcss-icon.joshnh
 const postcss     = require('postcss');
 const postcssIcon = require('postcss-icon');
 const dataJoshnh  = require('postcss-icon.joshnh');
+
+const CSS = `
+.custom-selector{
+	@icon: joshnh-pause; /* 'joshnh-' is Prefix , 'pause' is name Icon*/ }
+
+.custom-selector2{ /* or */
+	@icon joshnh-pause; }
+`;
 postcss(
 	postcssIcon({
 		prefix: 'joshnh-', /* required when using multiple Icon.data sets */
 		data: dataJoshnh
 	})
-).process(`
-.custom-selector{ @icon: joshnh-pause; } /* 'joshnh-' is Prefix , 'pause' is name Icon*/
-/* or */
-.custom-selector2{ @icon joshnh-pause; }
-`).then(({css,messages}) => {
+).process(CSS).then(({css,messages}) => {
 	console.log(css);
 	messages
 		.filter(i => i.type === "warning")
