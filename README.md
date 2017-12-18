@@ -22,9 +22,9 @@ postcss(
 		data: dataJoshnh
 	})
 ).process(`
-.custom-selector{ @icon: joshnh-pause; } /* `joshnh-` is Prefix , `pause` is name Icon*/
+.custom-selector{ @icon: joshnh-pause; } /* 'joshnh-' is Prefix , 'pause' is name Icon*/
 /* or */
-.custom-selector{ @icon joshnh-pause; }
+.custom-selector2{ @icon joshnh-pause; }
 `).then(({css,messages}) => {
 	console.log(css);
 	messages
