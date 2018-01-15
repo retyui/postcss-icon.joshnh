@@ -1,6 +1,6 @@
 {
   "name": "postcss-icon.joshnh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "joshnh-icons.js",
   "repository": "https://github.com/retyui/postcss-icon.joshnh",
   "author": "retyui <vamnemne@gmail.com>",
